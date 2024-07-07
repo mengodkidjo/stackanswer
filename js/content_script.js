@@ -15,14 +15,14 @@ let noAnswer = false;
        
  })(); 
 
- b.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    // console.log("get message ");
-    if(request.action === "executeAutoScroll"){
-        console.log("get message execute");
+//  b.runtime.onMessage.addListener((request, sender, sendResponse) => {
+//     // console.log("get message ");
+//     if(request.action === "executeAutoScroll"){
+//         console.log("get message execute");
 
-        pageLoad();
-    }
- })
+//         pageLoad();
+//     }
+//  })
 
 function pageLoad() {
     const autoScrollEnabled = localStorage.getItem('stackanswer-autoscroll-enabled') === 'true' || localStorage.getItem('stackanswer-autoscroll-enabled') === null || localStorage.getItem('stackanswer-autoscroll-enabled') === 'null';
